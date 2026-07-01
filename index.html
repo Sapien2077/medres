@@ -40,7 +40,6 @@
         .callout-myth { background-color: #FEF2F2; border-left: 4px solid #EF4444; }
         .callout-miss { background-color: #FFFBEB; border-left: 4px solid #F59E0B; }
         .callout-verdict { background-color: #EFF6FF; border-left: 4px solid #3B82F6; }
-        .callout-strategic { background-color: #F0FDF4; border-left: 4px solid #22C55E; }
 
         /* Chart container */
         .chart-container {
@@ -84,7 +83,7 @@
             <a href="#section-i" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">I. Immigration & Visa</a>
             <a href="#section-j" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">J. Specialty Strategy</a>
             <a href="#section-k" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">K. Language & Culture</a>
-            <a href="#section-l" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50 font-semibold text-blue-700">L. Admin Friction</a>
+            <a href="#section-l" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">L. Admin Friction</a>
             <a href="#section-m" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">M. Family Considerations</a>
             <a href="#section-n" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">N. Risk Analysis</a>
             <a href="#section-o" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">O. Strategic Comparison</a>
@@ -102,8 +101,8 @@
                 <p class="px-3 text-xs font-bold text-gray-400 uppercase tracking-wider">Final Analysis</p>
             </div>
             <a href="#section-u" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">U. Side-by-Side Summary</a>
-            <a href="#section-v" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50 font-semibold text-blue-700">V. Ranking & Recs</a>
-            <a href="#section-w" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">W. Parent Framework</a>
+            <a href="#section-v" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50">V. Ranking & Recs</a>
+            <a href="#section-w" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50 font-bold text-blue-700">W. Ultimate Parent Framework</a>
             <a href="#section-x" class="sidebar-link block px-3 py-2 rounded-md hover:bg-gray-50 font-bold text-blue-700">X. The Final Verdict</a>
         </nav>
     </aside>
@@ -118,21 +117,20 @@
                 
                 <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-200 text-lg leading-relaxed text-gray-700 space-y-4">
                     <p>The landscape for international medical graduates seeking postgraduate training has fundamentally shifted. This report provides an exhaustive, evidence-based analysis of the five primary postgraduate medical training destinations for Indian MBBS graduates in 2026: India, the United States, the United Kingdom, Germany, and Australia.</p>
-                    <p><strong>The Pathway Verdict:</strong> There is no single "best" country; there is only the best country for your specific priorities. If you want maximum prestige, global dominance, and the highest possible earnings, the <strong>USA</strong> is unmatched but requires surviving a high-risk, expensive, and visa-restricted match process. If you want a stress-free entry, guaranteed work-life balance, and top-tier income but are willing to wait years to become a specialist, <strong>Australia</strong> is the premier choice. </p>
-                    <p>If you want the fastest route to citizenship, guaranteed work-life balance, and the ability to easily enter highly competitive surgical branches that are closed off to IMGs in the Anglosphere, <strong>Germany</strong> is the most pragmatic and logical strategy, provided you can conquer the language barrier. The <strong>UK</strong> serves best as a straightforward stepping stone with low entry barriers but suffers from severe NHS bottlenecks and poor pay. <strong>India</strong>, while providing unmatched clinical volume and proximity to family, suffers from a brutal hyper-competitive entrance exam loop, immense financial costs for private seats, and a frequently toxic training hierarchy, making it the highest-risk option for students who are not exceptional multiple-choice test takers.</p>
+                    <p>The analysis reveals that traditional safety nets, such as the United Kingdom, have effectively closed their training pathways to new international graduates through legislative changes. Simultaneously, the United States remains highly lucrative but poses severe immigration bottlenecks. Australia offers exceptional work-life balance but traps candidates in years of unaccredited service roles. India provides immense clinical volume but exacts a heavy toll through extreme competition, rural service bonds, and workplace toxicity. Germany emerges as the most structurally sound middle ground, requiring a steep linguistic investment but rewarding candidates with predictable, paid specialist training and an expedited route to permanent European settlement.</p>
                 </div>
 
                 <!-- Dashboard Charts -->
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
-                        <h3 class="text-sm font-bold text-gray-500 uppercase mb-4 text-center">Estimated Upfront Cost vs Asset (₹ Lakhs)</h3>
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
+                        <h3 class="text-sm font-bold text-gray-500 uppercase mb-4 text-center">Estimated Upfront Cost (₹ Lakhs)</h3>
                         <div class="chart-container"><canvas id="costChart"></canvas></div>
-                        <p class="text-xs text-gray-400 mt-2 text-center">Note: Germany's largest component (Blocked Account) is a retained asset, not a sunk cost.</p>
+                        <p class="text-xs text-gray-400 mt-2 text-center">Includes exams, prep, visas, and mandatory living funds. (Germany = Asset, India Pvt = Debt)</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
                         <h3 class="text-sm font-bold text-gray-500 uppercase mb-4 text-center">IMG Success Probability (First Attempt)</h3>
                         <div class="chart-container"><canvas id="successChart"></canvas></div>
-                        <p class="text-xs text-gray-400 mt-2 text-center">Comparing USA Match rates to German hiring rates post-language clearance.</p>
+                        <p class="text-xs text-gray-400 mt-2 text-center">Comparing USA match rates to German hiring rates (post-language clearance).</p>
                     </div>
                 </div>
             </section>
@@ -157,7 +155,7 @@
                     <li><strong>USA:</strong> The United States Medical Licensing Examination (USMLE) sequence requires passing Step 1 (Pass/Fail) and achieving highly competitive scores on Step 2 CK.</li>
                     <li><strong>UK:</strong> The Professional and Linguistic Assessments Board (PLAB) exams, comprising PLAB 1 (MCQ) and PLAB 2 (OSCE), now mapped to the UK Medical Licensing Assessment (UKMLA) standards.</li>
                     <li><strong>Australia:</strong> The Australian Medical Council (AMC) pathway requires passing the AMC CAT MCQ (Part 1) and the AMC Clinical OSCE (Part 2).</li>
-                    <li><strong>Germany:</strong> Germany does not utilize a general medical entrance exam for residency. Instead, the focus is entirely on language (Fachsprachenprüfung) and clinical equivalence (Kenntnisprüfung).</li>
+                    <li><strong>Germany:</strong> Germany does not utilize a general medical entrance exam for residency. Instead, the focus is entirely on language and clinical equivalence.</li>
                 </ul>
 
                 <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Need for Language Proficiency</h3>
@@ -180,7 +178,7 @@
                 </ul>
 
                 <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Step-by-Step Process & The Power Dynamics of Hiring</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">The global pathways are divided into two distinct logistical models: centralized algorithms and decentralized direct hiring. <em>How do you actually get the job when your scores are identical to the next person's?</em></p>
+                <p class="text-gray-700 leading-relaxed mb-4">The global pathways are divided into two distinct logistical models: centralized matching and decentralized direct hiring. <em>How do you actually get the job when your scores are identical to the next person's?</em></p>
                 <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-4 space-y-3">
                     <li><strong>India:</strong> Heavily algorithm-driven via NEET-PG/INI-CET ranks. The Medical Counselling Committee (MCC) allots seats strictly based on rank and category. If you fail to secure a rank, you drop a year. There is no alternative route. Inside the hospital, however, it is fraught with toxic nepotism and hierarchy.</li>
                     <li><strong>USA:</strong> Driven by algorithms (The Match) and the "Old Boys Club" of USCE networking. Candidates apply via ERAS, interview, and the National Resident Matching Program (NRMP) pairs them. If unmatched, you enter the SOAP (scramble) or waste a year and reapply.</li>
@@ -199,14 +197,14 @@
                     <li><strong>USA:</strong> Resident (PGY-1 to PGY-7 depending on specialty), followed by Fellow.</li>
                     <li><strong>UK:</strong> Foundation Training (FY1/FY2), Core Training (CT1-CT3), and Higher Specialty Training (ST4-ST8).</li>
                     <li><strong>Australia:</strong> Pre-vocational terms (Intern/RMO), Unaccredited Registrar (service roles), and Accredited Registrar (formal vocational training).</li>
-                    <li><strong>Germany:</strong> Assistenzarzt (Assistant Doctor/Resident), progressing to Facharzt (Specialist).</li>
+                    <li><strong>Germany:</strong> Assistenzarzt (Resident in specialty training), progressing to Facharzt (Specialist).</li>
                 </ul>
 
                 <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Duration of Residency and Distinctions</h3>
                 <p class="text-gray-700 leading-relaxed mb-4">Indian MD/MS and DNB programs are strictly 3 years, with super-specialty adding another 3 years. The USA residency spans 3 years for Internal Medicine up to 7 years for Neurosurgery. The UK pathway is highly protracted, taking 7 to 10 years from graduation to Consultant status. Australia shares this prolonged timeline, with registrar training alone taking 3 to 7 years, frequently delayed by the unaccredited bottleneck. Germany offers an uninterrupted block of 5 to 6 years for Facharztausbildung (Specialist training), which inherently combines core and sub-specialty rotations without requiring re-interviewing midway.</p>
 
                 <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Service vs. Education</h3>
-                <p class="text-gray-700 leading-relaxed mb-4">The US system is highly structured around formal education, featuring protected didactic time and strict Accreditation Council for Graduate Medical Education (ACGME) duty-hour limits. India and the UK are heavily service-oriented; trainees form the backbone of the public healthcare infrastructure, often sacrificing academic learning for sheer patient volume. Germany operates on an apprenticeship model where the Assistenzarzt provides service but must proactively ensure their supervising consultant signs off on their required procedural logbook to qualify for the final Facharzt oral exam.</p>
+                <p class="text-gray-700 leading-relaxed mb-4">The US system is highly structured around formal education, featuring protected didactic time and strict Accreditation Council for Graduate Medical Education (ACGME) duty-hour limits. India and the UK are heavily service-oriented; trainees form the backbone of the public healthcare infrastructure, often sacrificing academic learning for sheer patient volume. Germany operates on an apprenticeship model where the Assistenzarzt provides service but must proactively ensure their supervising consultant signs off on their required procedural logbook to qualify for the final Facharzt exam.</p>
             </section>
 
             <section id="section-d" class="content-section mb-12">
@@ -214,13 +212,13 @@
                 
                 <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">IMG Competitiveness and The "Language Moat"</h3>
                 <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-4 space-y-3">
+                    <li><strong>USA:</strong> In 2026, the match rate for non-U.S. citizen IMGs was ~56.4%. Primary care is accessible, but surgical specialties, Dermatology, and Orthopedics are statistically nearly impossible for visa-requiring IMGs without years of dedicated, unpaid U.S. research.</li>
+                    <li><strong>UK:</strong> The Medical Training Prioritisation Act 2026 legally offers specialty training posts to UK graduates <em>before</em> any new IMG. In 2026, non-priority IMGs secured less than 2% of training offers, rendering the UK practically unviable for specialty training.</li>
+                    <li><strong>Australia:</strong> Competition for formal accredited training spots is extreme. Indian doctors compete against domestic graduates and UK/Irish IMGs on the Competent Authority Pathway, who bypass AMC exams entirely.</li>
                     <li><strong>India:</strong> Brutal. Around 200,000 applicants for ~50,000 PG seats. Only the top 5-10% get clinical branches in government colleges.</li>
-                    <li><strong>USA:</strong> High. In 2026, the match rate for non-U.S. citizen IMGs was ~56.4%. Primary care (Internal Medicine, Pediatrics) is realistic. Surgical branches are virtually aspirational for IMGs without years of US research.</li>
-                    <li><strong>UK:</strong> Easy to enter as a junior doctor, but becoming a consultant is the bottleneck due to massive competition for ST3 (higher specialty training) posts, which prioritize locals by law.</li>
-                    <li><strong>Australia:</strong> Easy to pass AMC 1. Hard to find the first job. Very hard to get into highly competitive specialty training (Surgery, Derm) which heavily favors locals.</li>
                 </ul>
 
-                <div class="callout-strategic p-5 rounded-lg mb-6 shadow-sm border border-green-200">
+                <div class="bg-green-50 border border-green-200 p-6 rounded-xl mb-6">
                     <p class="font-bold text-green-900 mb-2 text-lg">The Strategic Advantage of Germany: The Language Moat</p>
                     <p class="text-green-800 leading-relaxed">While the Anglosphere (USA, UK, Australia) is flooded with hundreds of thousands of international applicants precisely because they operate in English, the German language requirement acts as a massive <strong>'competition moat.'</strong> Because the majority of global graduates are unwilling to learn a new language, the applicant pool in Germany is artificially restricted. For the Indian student willing to put in 8-12 months of intensive language study, they effectively bypass the global bottleneck, moving from a hyper-competitive 'Match' algorithm to a decentralized system where hospitals are actively seeking to fill vacancies. You have low competition for jobs, and high competition only with yourself.</p>
                 </div>
@@ -236,7 +234,7 @@
                         <thead class="bg-gray-50 text-gray-600 font-bold border-b border-gray-200 uppercase text-xs">
                             <tr>
                                 <th class="px-4 py-3">Cost Component</th>
-                                <th class="px-4 py-3">India (Govt / Pvt)</th>
+                                <th class="px-4 py-3">India</th>
                                 <th class="px-4 py-3">USA</th>
                                 <th class="px-4 py-3">UK</th>
                                 <th class="px-4 py-3">Germany</th>
@@ -290,12 +288,12 @@
 
                 <p class="text-gray-700 leading-relaxed mb-4">The USA represents a high sunk-cost gamble; spending $15,000–$25,000 on USMLE flights, exams, and ERAS applications is a total loss if you fail to match. India offers the cheapest entry via government seats, but exacts a devastating financial toll for private management quota seats (₹1 to ₹3 Crores), which are massive, permanent sunk costs.</p>
                 
-                <p class="text-gray-700 leading-relaxed font-semibold">The German Financial Reality:</p>
+                <p class="text-gray-700 leading-relaxed font-semibold text-lg mt-6">The German Financial Reality:</p>
                 <p class="text-gray-700 leading-relaxed mb-4">The largest financial requirement for Germany is the <em>Sperrkonto</em> (Blocked Account) currently set at ~€11,904. <strong>This is not a fee; it is the student's own money, legally protected</strong>, which they draw down monthly to pay for their own rent and food while in Germany. The actual 'sunk' exam costs for Germany (FSP/KP) are closer to €1,500, making it statistically the most financially risk-averse foreign pathway.</p>
             </section>
 
             <section id="section-f" class="content-section mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center"><span class="text-blue-600 mr-3">F.</span> Earnings and Financial Return</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center"><span class="text-blue-600 mr-3">F.</span> Earnings, Purchasing Power, and Generational Wealth</h2>
                 
                 <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Resident Salary Structure & Post-Training Trajectory</h3>
                 <ul class="list-disc pl-6 text-gray-700 leading-relaxed mb-4 space-y-2">
@@ -306,7 +304,7 @@
                     <li><strong>India:</strong> Resident stipends range from ₹10,000/month (private) to ₹1,20,000/month (top govt). Consultants earn ₹1.5L - ₹5L/month. The private practice ceiling is limitless but takes 10+ years to build.</li>
                 </ul>
 
-                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Purchasing Power Parity (PPP) & Generational Wealth</h3>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Purchasing Power Parity (PPP) & Social Wealth</h3>
                 <p class="text-gray-700 leading-relaxed mb-4">Comparing raw salaries is a trap; we must compare what the money actually buys. While US attendings make the most money, rent in cities like New York or Boston can consume 40-50% of a resident's take-home pay. Mandatory car expenses, high health insurance deductibles, and the immense cost of funding children's university tuition in the US wipes out a massive portion of that wealth over a lifetime.</p>
                 <p class="text-gray-700 leading-relaxed mb-4">Germany operates on a <strong>"Social Wealth" model</strong>. Yes, taxes are high (around 40% deduction), but this provides "invisible wealth." A resident in a mid-sized German city (e.g., Leipzig, Freiburg) often has a higher disposable income and better housing quality than a resident in Brooklyn or London. Furthermore, comprehensive health insurance is guaranteed, university education for children is virtually free, and the state pays <em>Kindergeld</em> (child benefits) every month until the child is 25.</p>
 
@@ -373,7 +371,6 @@
                 </ul>
             </section>
 
-            <!-- ADDED SECTION L -->
             <section id="section-l" class="content-section mb-12">
                 <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center"><span class="text-blue-600 mr-3">L.</span> Administrative Friction & Bureaucracy</h2>
                 
@@ -627,7 +624,6 @@
                 </div>
             </section>
 
-            <!-- ADDED SECTION V -->
             <section id="section-v" class="content-section mb-16">
                 <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center"><span class="text-blue-600 mr-3">V.</span> Final Ranking by Persona</h2>
                 
@@ -685,32 +681,136 @@
             </section>
 
             <section id="section-w" class="content-section mb-16">
-                <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center"><span class="text-blue-600 mr-3">W.</span> Decision Framework for Parents</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center"><span class="text-blue-600 mr-3">W.</span> The Ultimate Decision Framework for Parents</h2>
                 
-                <div class="bg-amber-50 border border-amber-200 p-8 rounded-2xl mb-6">
-                    <p class="text-gray-800 leading-relaxed mb-6">Parents frequently operate under the assumption that "India is best" because it is a known entity, culturally safe, and socially prestigious within local circles. However, this perspective is incomplete and often ignores the harsh modern realities of medical training.</p>
+                <div class="bg-amber-50 border border-amber-200 p-8 rounded-2xl mb-8">
+                    <p class="text-gray-800 leading-relaxed mb-4 text-lg font-medium">To the Parents reading this report:</p>
+                    <p class="text-gray-700 leading-relaxed mb-6">Your primary goal is the safety, happiness, financial security, and prestige of your child, alongside ensuring that your family remains connected. Traditionally, Indian parents operate under the assumption that "staying in India" (even if it costs ₹2 Crores) or "going to the USA" are the only two paths that guarantee these outcomes. <strong>In 2026, this assumption is statistically and legally false.</strong></p>
                     
-                    <h4 class="font-bold text-amber-900 mb-2">Why "India is best" may be incomplete:</h4>
-                    <p class="text-gray-700 leading-relaxed mb-6">The Indian postgraduate medical framework is suffering from intense systemic strain. The sheer mathematical improbability of securing a preferred clinical seat pushes thousands of brilliant minds into endless cycles of drop-years. Alternatively, it forces families to liquidate life savings to pay ₹1 Crore+ for private seats. Furthermore, the toxic work culture and unregulated hours in Indian residencies actively damage young doctors' health.</p>
+                    <h4 class="font-bold text-amber-900 mb-2">The Danger of the "Indian Default":</h4>
+                    <p class="text-gray-700 leading-relaxed mb-0">The Indian postgraduate medical framework is suffering from intense systemic strain. The sheer mathematical improbability of securing a preferred clinical seat in a government hospital pushes thousands of brilliant minds into endless cycles of "drop-years." Alternatively, it forces families to liquidate life savings to pay for private management seats. Furthermore, the toxic work culture, physical risk of workplace violence, and unregulated 100-hour work weeks in Indian residencies actively damage young doctors' physical and mental health. <em>You are not buying safety; you are buying severe burnout.</em></p>
                 </div>
 
-                <h4 class="font-bold text-gray-900 text-xl mb-4">Answering Emotional Objections Logically:</h4>
+                <h3 class="text-2xl font-bold text-gray-900 mb-6">Dismantling the 7 Core Parental Fears (Myth vs. Reality)</h3>
+                <p class="text-gray-600 mb-6">Below are the most common emotional objections parents have when their child proposes the German pathway, answered with cold, undeniable data.</p>
                 
                 <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <p class="font-bold text-red-700 mb-2 text-lg">Parent Objection: "Why learn German when they already speak English? Let's aim for the US or UK."</p>
-                        <p class="text-gray-700 leading-relaxed"><strong class="text-green-700">Objective Reality:</strong> English is precisely why those systems are bottlenecked. Everyone speaks English. By choosing an English-speaking country, your child is competing against 100,000+ applicants from India, Pakistan, Nigeria, and the Philippines. Learning German is a one-time 12-month investment that eliminates 95% of the global competition.</p>
-                    </div>
-                    
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <p class="font-bold text-red-700 mb-2 text-lg">Parent Objection: "India is safer. At least they are home."</p>
-                        <p class="text-gray-700 leading-relaxed"><strong class="text-green-700">Objective Reality:</strong> India is socially familiar, but professionally precarious. The 80-100 hour work weeks, frequent toxic hierarchy, and low stipends lead to high burnout rates. 'Safety' should also be measured by workplace protections. Germany enforces strict EU labor laws (Arbeitszeitgesetz) capping hours at 40-48/week, mandating paid overtime, and ensuring 30 days of paid annual leave, leading to a much longer, healthier career lifespan.</p>
+                    <!-- Objection 1 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 text-red-700 p-2 rounded-lg mr-4 mt-1"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></div>
+                            <div>
+                                <p class="font-bold text-red-800 text-lg mb-1">1. The Language Objection</p>
+                                <p class="italic text-gray-600">"Why waste a year learning German? They already speak English fluently. The USA, UK, or Australia is much more natural."</p>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg ml-12">
+                            <p class="font-bold text-green-800 mb-2">The Objective Reality:</p>
+                            <p class="text-gray-700 leading-relaxed">English is precisely <em>why</em> those systems are bottlenecked. Because everyone speaks English, choosing an English-speaking country means your child competes against 100,000+ applicants from India, Pakistan, Nigeria, and the Philippines. The UK has legally closed its doors to IMGs for training. The USA Match is highly subjective. <strong>Learning German is a one-time, 12-month investment that eliminates 95% of the global competition.</strong> It acts as a "moat" protecting their career.</p>
+                        </div>
                     </div>
 
-                    <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
-                        <p class="font-bold text-red-700 mb-2 text-lg">Parent Objection: "The USA is the only country worth going to for long-term wealth."</p>
-                        <p class="text-gray-700 leading-relaxed"><strong class="text-green-700">Objective Reality:</strong> The USA traps Indian nationals in an immigration system that may never yield a Green Card in their lifetime, restricting their ability to open clinics or easily travel back to care for aging parents. Spouses on H4 visas are benched from working for years. Germany and Australia offer permanent residency within 2 to 4 years, unrestricted work rights for spouses, and ensure family stability.</p>
+                    <!-- Objection 2 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 text-red-700 p-2 rounded-lg mr-4 mt-1"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                            <div>
+                                <p class="font-bold text-red-800 text-lg mb-1">2. The Wealth / Sunk Cost Objection</p>
+                                <p class="italic text-gray-600">"We have the money to pay ₹2 Crores for a private MD/MS seat in India. We want an easy, guaranteed life for our child. Why go through all this struggle abroad?"</p>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg ml-12">
+                            <p class="font-bold text-green-800 mb-2">The Objective Reality:</p>
+                            <p class="text-gray-700 leading-relaxed">Paying ₹2 Crores for a degree is a catastrophic misallocation of capital. That same capital, invested wisely, yields ₹15-20 Lakhs annually in passive income forever. Furthermore, a private seat does not buy an "easy life"—the resident still works 90-hour weeks in often toxic conditions for a meager stipend. Going to Germany requires only a ~€11,900 Blocked Account (which is the student's <em>own</em> living money) and pays a €60,000 (~₹54 Lakhs) salary immediately. <strong>It transforms your child from a multi-crore financial liability into a high-earning asset from day one.</strong></p>
+                        </div>
                     </div>
+
+                    <!-- Objection 3 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-red-100 text-red-700 p-2 rounded-lg mr-4 mt-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-red-800 text-lg mb-1">3. The Societal & Professional Reputation Objection</p>
+                            <p class="italic text-gray-600">"Nobody in our social circle knows what a 'Facharzt' is. An American Board Certification or an Indian MD carries more weight when discussing future prospects and family standing."</p>
+                        </div>
+                    </div>
+                    <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg ml-12">
+                        <p class="font-bold text-green-800 mb-2">The Objective Reality:</p>
+                        <p class="text-gray-700 leading-relaxed">Local visibility does not mitigate the harsh realities of 100-hour work weeks, extreme burnout, or the precarious nature of long-term visa backlogs. <strong>True social capital in 2026 is built on a globally respected European medical qualification, high clinical autonomy, and a balanced lifestyle.</strong> Furthermore, holding an EU Blue Card and securing fast-track European citizenship (within 3-5 years) provides a foundation of stability that is immensely valued by modern families. This creates a far more secure, independent, and high-status future than a path hindered by a 50-year wait for a US Green Card, where your long-term legal status and professional mobility remain tethered to employer sponsorship.</p>
+                    </div>
+                </div>
+
+
+                    <!-- Objection 4 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 text-red-700 p-2 rounded-lg mr-4 mt-1"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg></div>
+                            <div>
+                                <p class="font-bold text-red-800 text-lg mb-1">4. The Abandonment / Emergency Objection</p>
+                                <p class="italic text-gray-600">"What if we get sick? We want you close enough to come back to India immediately to take care of us."</p>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg ml-12">
+                            <p class="font-bold text-green-800 mb-2">The Objective Reality:</p>
+                            <p class="text-gray-700 leading-relaxed"><strong>Geographic proximity is meaningless if the doctor cannot legally or practically leave their job.</strong> A doctor in India might be denied emergency leave by a toxic Head of Department. A doctor stuck in the US on a restrictive J-1/H-1B visa might be barred from re-entering the US if they leave abruptly. A resident in Germany is protected by EU labor laws mandating 30 days of paid leave and robust emergency family leave. Combined with an 8-hour direct flight from Frankfurt/Munich to Delhi, a doctor in Germany actually has vastly more flexibility and legal protection to visit India in an emergency than doctors in the US or even parts of India.</p>
+                        </div>
+                    </div>
+
+                    <!-- Objection 5 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 text-red-700 p-2 rounded-lg mr-4 mt-1"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div>
+                            <div>
+                                <p class="font-bold text-red-800 text-lg mb-1">5. The "Old Age Support" Objection</p>
+                                <p class="italic text-gray-600">"We want to live with you eventually and see our grandchildren grow up. We can't do that if you are settled abroad permanently."</p>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg ml-12">
+                            <p class="font-bold text-green-800 mb-2">The Objective Reality:</p>
+                            <p class="text-gray-700 leading-relaxed">If your child goes to the USA, they will likely not secure citizenship for decades, meaning you can only ever visit on 6-month B1/B2 tourist visas without access to local healthcare. <strong>Germany recently reformed its immigration laws (2024), allowing citizenship in 3 to 5 years.</strong> Once your child is a European citizen, family reunification laws make it significantly easier to navigate long-term visas for aging parents, granting you access to a world-class social safety net and the ability to spend extended, uninterrupted time with your grandchildren.</p>
+                        </div>
+                    </div>
+
+                    <!-- Objection 6 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 text-red-700 p-2 rounded-lg mr-4 mt-1"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg></div>
+                            <div>
+                                <p class="font-bold text-red-800 text-lg mb-1">6. The Fear of Failure Objection</p>
+                                <p class="italic text-gray-600">"What if you spend a year learning German, move there, and fail the licensing exams? It’s a huge waste of time and career momentum."</p>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg ml-12">
+                            <p class="font-bold text-green-800 mb-2">The Objective Reality:</p>
+                            <p class="text-gray-700 leading-relaxed">The German exams (FSP/KP) are <em>competency-based</em>, meaning you are tested against a standard, not ranked against other humans. Multiple retakes are allowed. In contrast, NEET-PG and the USMLE Match are <em>algorithm-based</em>; you can score exceptionally well and still fail to secure a seat simply because 10,000 others scored one mark higher. <strong>A "drop year" in India has a much higher statistical probability of yielding zero results.</strong> In Germany, even if delayed, the student is learning a lifelong skill and can often work on a temporary clinical license (Berufserlaubnis) earning a salary while preparing for a retake.</p>
+                        </div>
+                    </div>
+
+                    <!-- Objection 7 -->
+                    <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-red-100 text-red-700 p-2 rounded-lg mr-4 mt-1"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"></path></svg></div>
+                            <div>
+                                <p class="font-bold text-red-800 text-lg mb-1">7. The Safety and Racism Objection</p>
+                                <p class="italic text-gray-600">"Is it safe? Will patients treat a brown doctor badly? The USA and UK are more diverse and used to Indians."</p>
+                            </div>
+                        </div>
+                        <div class="bg-green-50 border-l-4 border-green-500 p-4 rounded-r-lg ml-12">
+                            <p class="font-bold text-green-800 mb-2">The Objective Reality:</p>
+                            <p class="text-gray-700 leading-relaxed">While the Anglosphere is diverse, systemic bias actively filters IMGs out of top specialties. In Germany, the hiring process is completely merit-and-language based. Patient-level prejudice exists globally, but in Germany, <strong>language fluency is equated with professional competence.</strong> The moment your child speaks flawless, C1-level German, the vast majority of prejudice evaporates. Furthermore, regarding physical safety, Germany boasts one of the lowest violent crime rates in the world, in stark contrast to the gun violence epidemic in the USA and the frequent physical assaults on resident doctors in Indian government hospitals.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-blue-900 text-white p-8 rounded-2xl shadow-lg text-center">
+                    <h4 class="text-2xl font-bold mb-4">The Final Word to Parents</h4>
+                    <p class="text-blue-100 leading-relaxed text-lg max-w-3xl mx-auto">
+                        Supporting the decision to pursue residency in Germany is not a leap into the unknown; it is the most calculated, financially sound, and highly protective strategy available to an Indian medical graduate today. It guarantees their mental health, preserves your family capital, and secures a globally elite future. Support this choice 100%—no questions asked.
+                    </p>
                 </div>
             </section>
 
@@ -720,8 +820,8 @@
                 <p class="text-lg text-gray-700 leading-relaxed mb-6">The global landscape of medical education has fundamentally shifted in 2026. The UK, previously the default safety net, has legislated against international medical graduates entering specialty training. The USA remains highly lucrative but functions as an immigration trap for Indian nationals. Australia offers an incredible lifestyle but hides a multi-year purgatory of unaccredited registrar roles and forced rural service. India remains a high-volume, high-toxicity gauntlet driven by an increasingly volatile exam system and extortionate private fees.</p>
 
                 <div class="bg-blue-900 text-white p-8 rounded-2xl shadow-lg mb-8">
-                    <p class="text-2xl font-bold mb-4">Is Germany actually a good choice? <span class="text-green-400">Yes.</span></p>
-                    <p class="text-blue-100 leading-relaxed">For an Indian MBBS graduate willing to treat the German language as seriously as a medical textbook, Germany is the most statistically sound, financially viable, and lifestyle-friendly destination available today. It is the only Western system where specialty training is not actively gated against foreign graduates by protectionist laws or impossible match algorithms. India should no longer be considered the undeniable default; it is simply one option—one that happens to carry massive opportunity costs in terms of either mental health (the NEET loop) or raw capital (private fees).</p>
+                    <p class="text-2xl font-bold mb-4">Is Germany actually a good choice? <span class="text-yellow-400">Yes.</span></p>
+                    <p class="text-blue-100 leading-relaxed">For an Indian MBBS graduate willing to treat the German language as seriously as a medical textbook, Germany is the most statistically sound, financially viable, and lifestyle-friendly destination available today. It is the only Western system where specialty training is not actively gated against foreign graduates by protectionist laws or impossible match algorithms. India should no longer be considered the undeniable default; it is simply one option—one that happens to cost the most in terms of either mental health (NEET loop) or raw capital (private fees).</p>
                 </div>
 
                 <div class="bg-white p-6 rounded-xl border border-gray-200 mb-8 shadow-sm">
@@ -752,19 +852,13 @@
                                 <td class="px-4 py-3 font-semibold">Fastest Permanent Residency</td>
                                 <td class="px-4 py-3 font-bold text-green-700">Germany</td>
                                 <td class="px-4 py-3">Australia</td>
-                                <td class="px-4 py-3 text-red-500">USA (50 yr backlog)</td>
+                                <td class="px-4 py-3 text-red-500">USA</td>
                             </tr>
                             <tr>
                                 <td class="px-4 py-3 font-semibold">Lifestyle and Mental Health</td>
                                 <td class="px-4 py-3 font-bold text-green-700">Australia</td>
-                                <td class="px-4 py-3 text-green-600">Germany</td>
+                                <td class="px-4 py-3">Germany</td>
                                 <td class="px-4 py-3 text-red-500">India</td>
-                            </tr>
-                            <tr>
-                                <td class="px-4 py-3 font-semibold">Accessible Surgical Training</td>
-                                <td class="px-4 py-3 font-bold text-green-700">Germany</td>
-                                <td class="px-4 py-3 text-amber-600">India (Top Rank needed)</td>
-                                <td class="px-4 py-3 text-red-500">USA / Australia</td>
                             </tr>
                         </tbody>
                     </table>
@@ -773,7 +867,7 @@
                 <div class="border-l-4 border-gray-900 pl-6 py-2">
                     <p class="font-bold text-xl text-gray-900 mb-2">The Single Most Important Decision Rule</p>
                     <p class="text-gray-700 italic text-lg leading-relaxed">
-                        "Never choose a country based on internet prestige; choose a country based on the specific sacrifices the candidate is willing to make. If they will sacrifice long-term immigration freedom, choose the USA. If they will sacrifice location and rapid career progression, choose Australia. If they will sacrifice a year to master linguistics, choose Germany. If they will sacrifice their youth and mental well-being to MCQ exams, choose India."
+                        "Never choose a country based on internet prestige; choose a country based on the specific sacrifices the candidate is willing to make. If they will sacrifice money and immigration freedom, choose the USA. If they will sacrifice location and rapid career progression, choose Australia. If they will sacrifice a year to linguistics, choose Germany. If they will sacrifice their youth and mental well-being to MCQ exams, choose India."
                     </p>
                 </div>
             </section>
@@ -793,7 +887,7 @@
             new Chart(ctxCost, {
                 type: 'bar',
                 data: {
-                    labels: ['India (Govt)', 'USA (Sunk)', 'UK (Sunk)', 'Germany (Asset)', 'Australia', 'India (Pvt)'],
+                    labels: ['India (Govt)', 'USA', 'UK', 'Germany', 'Australia', 'India (Pvt)'],
                     datasets: [{
                         label: 'Upfront Cost (₹ Lakhs)',
                         data: [1, 20, 5, 12, 32, 120],
